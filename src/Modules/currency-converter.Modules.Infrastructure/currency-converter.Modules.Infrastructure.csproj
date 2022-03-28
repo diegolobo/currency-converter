@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>currency_converter.Modules.Infrastructure</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Adapters\currency-converter.Adapters.DataAccess\currency-converter.Adapters.DataAccess.csproj" />
+    <ProjectReference Include="..\..\Adapters\currency-converter.Adapters.DataRead\currency-converter.Adapters.DataRead.csproj" />
+    <ProjectReference Include="..\currency-converter.Modules.Application\currency-converter.Modules.Application.csproj" />
+  </ItemGroup>
+
+</Project>

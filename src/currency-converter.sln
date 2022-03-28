@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "currency-converter.API", "currency-converter.API\currency-converter.API.csproj", "{D97BEA76-8F49-466E-8CA5-8997A68A4C74}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{6A89FEBB-3B5D-4E91-9A73-4F2FAE126746}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{D8A2F6D9-DA93-45AF-A397-2C4B0F5C61EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{20D49FA6-5E27-49F5-8CF7-78C63279D84D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "currency-converter.API", "Services\currency-converter.API\currency-converter.API.csproj", "{49AB63DC-7AFC-4F92-9CF4-34648ACD298F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "currency-converter.Modules.Domain", "Modules\currency-converter.Modules.Domain\currency-converter.Modules.Domain\currency-converter.Modules.Domain.csproj", "{5D01CBCF-96A2-4E90-9BB8-61E52000CEC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "currency-converter.Modules.Application", "Modules\currency-converter.Modules.Application\currency-converter.Modules.Application.csproj", "{43F1A057-C38C-49C5-AA31-EC5BF95ED55C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "currency-converter.Modules.Infrastructure", "Modules\currency-converter.Modules.Infrastructure\currency-converter.Modules.Infrastructure.csproj", "{1168B14B-F9FD-4625-ABC4-8214D030A422}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "currency-converter.Adapters.DataAccess", "Adapters\currency-converter.Adapters.DataAccess\currency-converter.Adapters.DataAccess.csproj", "{AFC7C26B-310B-47FA-9D9D-C799F4C26806}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "currency-converter.Adapters.DataRead", "Adapters\currency-converter.Adapters.DataRead\currency-converter.Adapters.DataRead.csproj", "{31A81F35-16CA-4544-A49A-AE96C8B69218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "currency-converter.Services.Provider", "Services\currency-converter.Services.Provider\currency-converter.Services.Provider.csproj", "{E713028C-93F8-415A-9289-1CD7514871C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "currency-converter.Adapters.Provider", "Adapters\currency-converter.Adapters.Provider\currency-converter.Adapters.Provider.csproj", "{27C8E15A-6CCE-45AB-9A06-B615B4606962}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +31,51 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D97BEA76-8F49-466E-8CA5-8997A68A4C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D97BEA76-8F49-466E-8CA5-8997A68A4C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D97BEA76-8F49-466E-8CA5-8997A68A4C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D97BEA76-8F49-466E-8CA5-8997A68A4C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AB63DC-7AFC-4F92-9CF4-34648ACD298F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AB63DC-7AFC-4F92-9CF4-34648ACD298F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AB63DC-7AFC-4F92-9CF4-34648ACD298F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AB63DC-7AFC-4F92-9CF4-34648ACD298F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D01CBCF-96A2-4E90-9BB8-61E52000CEC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D01CBCF-96A2-4E90-9BB8-61E52000CEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D01CBCF-96A2-4E90-9BB8-61E52000CEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D01CBCF-96A2-4E90-9BB8-61E52000CEC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F1A057-C38C-49C5-AA31-EC5BF95ED55C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F1A057-C38C-49C5-AA31-EC5BF95ED55C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F1A057-C38C-49C5-AA31-EC5BF95ED55C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F1A057-C38C-49C5-AA31-EC5BF95ED55C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1168B14B-F9FD-4625-ABC4-8214D030A422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1168B14B-F9FD-4625-ABC4-8214D030A422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1168B14B-F9FD-4625-ABC4-8214D030A422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1168B14B-F9FD-4625-ABC4-8214D030A422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC7C26B-310B-47FA-9D9D-C799F4C26806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC7C26B-310B-47FA-9D9D-C799F4C26806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC7C26B-310B-47FA-9D9D-C799F4C26806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC7C26B-310B-47FA-9D9D-C799F4C26806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31A81F35-16CA-4544-A49A-AE96C8B69218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A81F35-16CA-4544-A49A-AE96C8B69218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A81F35-16CA-4544-A49A-AE96C8B69218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A81F35-16CA-4544-A49A-AE96C8B69218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E713028C-93F8-415A-9289-1CD7514871C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E713028C-93F8-415A-9289-1CD7514871C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E713028C-93F8-415A-9289-1CD7514871C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E713028C-93F8-415A-9289-1CD7514871C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C8E15A-6CCE-45AB-9A06-B615B4606962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C8E15A-6CCE-45AB-9A06-B615B4606962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C8E15A-6CCE-45AB-9A06-B615B4606962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C8E15A-6CCE-45AB-9A06-B615B4606962}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49AB63DC-7AFC-4F92-9CF4-34648ACD298F} = {20D49FA6-5E27-49F5-8CF7-78C63279D84D}
+		{5D01CBCF-96A2-4E90-9BB8-61E52000CEC0} = {D8A2F6D9-DA93-45AF-A397-2C4B0F5C61EA}
+		{43F1A057-C38C-49C5-AA31-EC5BF95ED55C} = {D8A2F6D9-DA93-45AF-A397-2C4B0F5C61EA}
+		{1168B14B-F9FD-4625-ABC4-8214D030A422} = {D8A2F6D9-DA93-45AF-A397-2C4B0F5C61EA}
+		{AFC7C26B-310B-47FA-9D9D-C799F4C26806} = {6A89FEBB-3B5D-4E91-9A73-4F2FAE126746}
+		{31A81F35-16CA-4544-A49A-AE96C8B69218} = {6A89FEBB-3B5D-4E91-9A73-4F2FAE126746}
+		{E713028C-93F8-415A-9289-1CD7514871C4} = {20D49FA6-5E27-49F5-8CF7-78C63279D84D}
+		{27C8E15A-6CCE-45AB-9A06-B615B4606962} = {6A89FEBB-3B5D-4E91-9A73-4F2FAE126746}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8ACBD97D-7061-4663-A40B-DDD8DC705B4B}

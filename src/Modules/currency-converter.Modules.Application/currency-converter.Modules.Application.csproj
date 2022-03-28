@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>currency_converter.Modules.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Adapters\currency-converter.Adapters.Provider\currency-converter.Adapters.Provider.csproj" />
+    <ProjectReference Include="..\currency-converter.Modules.Domain\currency-converter.Modules.Domain\currency-converter.Modules.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
+
+</Project>
